@@ -17,7 +17,7 @@ class HelloWorldTest(unittest.TestCase):
             hello.main()
         output = buffer.getvalue()
         self.assertEqual(output, "Hello, world!\n")
-        print(output, end="")
+        print(output, end="", flush=True)
 
 
 if __name__ == "__main__":
